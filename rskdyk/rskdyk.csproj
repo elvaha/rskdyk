@@ -3259,6 +3259,8 @@
     <Content Include="Views\Master.cshtml" />
     <Content Include="Views\News.cshtml" />
     <Content Include="Views\NewsItem.cshtml" />
+    <Content Include="Views\Partials\MainNavigation.cshtml" />
+    <Content Include="Views\Partials\ChildListNavigation.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
