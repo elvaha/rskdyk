@@ -3040,6 +3040,8 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\ContactFormSurfaceController.cs" />
+    <Compile Include="Models\ContactFormModelView.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
@@ -3261,6 +3263,7 @@
     <Content Include="Views\NewsItem.cshtml" />
     <Content Include="Views\Partials\MainNavigation.cshtml" />
     <Content Include="Views\Partials\ChildListNavigation.cshtml" />
+    <Content Include="Views\Partials\ContactForm.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -3274,9 +3277,8 @@
     <Folder Include="App_Data\NuGetBackup\20161212-203231\Umbraco_Client\" />
     <Folder Include="App_Data\packages\created\" />
     <Folder Include="App_Data\TEMP\Install\" />
-    <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
     <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="Views\ContactFormSurface\" />
     <Folder Include="Views\MacroPartials\" />
   </ItemGroup>
   <ItemGroup>

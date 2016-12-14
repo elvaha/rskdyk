@@ -1,5 +1,31 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
 @{
-	Layout = "Master.cshtml";
+    Layout = "Master.cshtml";
 }
+
+@{
+    var statements = CurrentPage.Site().Children("statement");
+    var rnd = new Random();
+    var firstPick = rnd.Next(statements.Count() + 1);
+
+    var secondPick = 0;
+
+    if (firstPick != statements.Count())
+    {
+        secondPick = firstPick + 1;
+    }
+
+    var statementOne = statements.getIndex(firstPick);
+    var statementTwo = statements.getIndex(secondPick);
+}
+
+<section></section>
+
+<section>
+    <p>@statementOne.statementName</p>
+    <p>@statementTwo.statementName</p>
+</section>
+
+<section></section>
+
 
