@@ -3,6 +3,13 @@
     Layout = "Master.cshtml";
 }
 
+@Umbraco.Field("title")
+@Umbraco.Field("subTitle")
+@Umbraco.Field("contentTop")
+@Umbraco.Field("contentBot")
+@Umbraco.Field("ctaTitle")
+@Umbraco.Field("actionLink")
+
 @{
     var statements = CurrentPage.Site().Children("testimonials");
     var rnd = new Random();

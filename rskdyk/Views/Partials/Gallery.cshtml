@@ -1,0 +1,12 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+
+	@if (Model.Content.HasValue("Pictures"))
+{
+    var imagesList = Model.Content.GetPropertyValue<string>("Pictures").Split(new string[] { "," }, StringSplitOptions.RemoveEmptyEntries).Select(int.Parse);
+    var imagesCollection = Umbraco.TypedMedia(imagesList).Where(x => x != null);
+
+    foreach (var imageItem in imagesCollection)
+        {      
+            <img src="@imageItem.Url" />      
+        }                                                               
+}

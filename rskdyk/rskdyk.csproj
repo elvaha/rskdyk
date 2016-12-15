@@ -3264,6 +3264,19 @@
     <Content Include="Views\Partials\MainNavigation.cshtml" />
     <Content Include="Views\Partials\ChildListNavigation.cshtml" />
     <Content Include="Views\Partials\ContactForm.cshtml" />
+    <Content Include="Views\Payment.cshtml" />
+    <Content Include="Views\RentEquipment.cshtml" />
+    <Content Include="Views\Testimonials.cshtml" />
+    <Content Include="Views\Course.cshtml" />
+    <Content Include="Views\Courses.cshtml" />
+    <Content Include="Views\Error404.cshtml" />
+    <Content Include="Views\ForbiddenAcces.cshtml" />
+    <Content Include="Views\Login.cshtml" />
+    <Content Include="Views\Membership.cshtml" />
+    <Content Include="Views\AboutPage.cshtml" />
+    <Content Include="Views\Partials\Login.cshtml" />
+    <Content Include="Views\Partials\Gallery.cshtml" />
+    <Content Include="Views\ProfilePage.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -3279,6 +3292,7 @@
     <Folder Include="App_Data\TEMP\Install\" />
     <Folder Include="obj\Debug\TempPE\" />
     <Folder Include="Views\ContactFormSurface\" />
+    <Folder Include="Views\Home\" />
     <Folder Include="Views\MacroPartials\" />
   </ItemGroup>
   <ItemGroup>
