@@ -7,7 +7,8 @@
     It also highlights the current active page/section in the navigation with the css class "current".
 *@
 
-@{ var selection = CurrentPage.Site().Children.Where("Visible"); }
+@{ var selection = CurrentPage.Site().Children.Where("Visible"); 
+ var loginStatus = Members.GetCurrentLoginStatus()}
 
 <ul>
     @foreach (var item in selection)
@@ -24,4 +25,11 @@
 			</li>
 		}
     }
+	<li>
+		@if(loginStatus.isLoggedIn){
+			<a href='@Url.Action("Logout", "LoginSurface")'>Logout</a>
+		}else{
+			<a href="/login/">Login</a>	
+		}
+	</li>
 </ul>
