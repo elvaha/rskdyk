@@ -2,15 +2,13 @@
 @{
     Layout = "Master.cshtml";
 }
-
 @Umbraco.Field("title")
 @Umbraco.Field("subTitle")
 @Umbraco.Field("contentTop")
 @Umbraco.Field("contentBot")
 @Umbraco.Field("ctaTitle")
 @Umbraco.Field("actionLink")
-
-@{
+@*@{
     var statements = CurrentPage.Site().Children("testimonials");
     var rnd = new Random();
     var firstPick = rnd.Next(statements.Count() + 1);
@@ -25,14 +23,10 @@
     var statementOne = statements.getIndex(firstPick);
     var statementTwo = statements.getIndex(secondPick);
 }
-
 <section></section>
-
 <section>
     <p>@statementOne.statementName</p>
     <p>@statementTwo.statementName</p>
-</section>
-
+</section>*@
 <section></section>
-
 

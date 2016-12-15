@@ -19,8 +19,8 @@ using Umbraco.ModelsBuilder;
 using Umbraco.ModelsBuilder.Umbraco;
 
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "515d42c98257b164")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.7")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "f59b528bb65aecb8")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.2")]
 
 namespace Umbraco.Web.PublishedContentModels
 {
@@ -61,10 +61,10 @@ namespace Umbraco.Web.PublishedContentModels
 		///<summary>
 		/// Hide in Navigation?
 		///</summary>
-		[ImplementPropertyType("umbracoNaviHide")]
+		[ImplementPropertyType("UmbracoNaviHide")]
 		public bool UmbracoNaviHide
 		{
-			get { return this.GetPropertyValue<bool>("umbracoNaviHide"); }
+			get { return this.GetPropertyValue<bool>("UmbracoNaviHide"); }
 		}
 	}
 
@@ -242,32 +242,6 @@ namespace Umbraco.Web.PublishedContentModels
 		public string Title
 		{
 			get { return this.GetPropertyValue<string>("title"); }
-		}
-	}
-
-	/// <summary>Contact</summary>
-	[PublishedContentModel("contact")]
-	public partial class Contact : SEO
-	{
-#pragma warning disable 0109 // new is redundant
-		public new const string ModelTypeAlias = "contact";
-		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
-#pragma warning restore 0109
-
-		public Contact(IPublishedContent content)
-			: base(content)
-		{ }
-
-#pragma warning disable 0109 // new is redundant
-		public new static PublishedContentType GetModelContentType()
-		{
-			return PublishedContentType.Get(ModelItemType, ModelTypeAlias);
-		}
-#pragma warning restore 0109
-
-		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Contact, TValue>> selector)
-		{
-			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
 		}
 	}
 
@@ -569,6 +543,15 @@ namespace Umbraco.Web.PublishedContentModels
 		{
 			get { return this.GetPropertyValue<string>("title"); }
 		}
+
+		///<summary>
+		/// Hide in Navigation
+		///</summary>
+		[ImplementPropertyType("UmbracoNaviHide")]
+		public bool UmbracoNaviHide
+		{
+			get { return this.GetPropertyValue<bool>("UmbracoNaviHide"); }
+		}
 	}
 
 	/// <summary>About Page</summary>
@@ -652,10 +635,10 @@ namespace Umbraco.Web.PublishedContentModels
 		///<summary>
 		/// Hide in navigation
 		///</summary>
-		[ImplementPropertyType("umbracoNaviHide")]
+		[ImplementPropertyType("UmbracoNaviHide")]
 		public bool UmbracoNaviHide
 		{
-			get { return this.GetPropertyValue<bool>("umbracoNaviHide"); }
+			get { return this.GetPropertyValue<bool>("UmbracoNaviHide"); }
 		}
 	}
 
@@ -885,6 +868,32 @@ namespace Umbraco.Web.PublishedContentModels
 		public string Title
 		{
 			get { return this.GetPropertyValue<string>("title"); }
+		}
+	}
+
+	/// <summary>Contact Us</summary>
+	[PublishedContentModel("contactUs")]
+	public partial class ContactUs : SEO
+	{
+#pragma warning disable 0109 // new is redundant
+		public new const string ModelTypeAlias = "contactUs";
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+#pragma warning restore 0109
+
+		public ContactUs(IPublishedContent content)
+			: base(content)
+		{ }
+
+#pragma warning disable 0109 // new is redundant
+		public new static PublishedContentType GetModelContentType()
+		{
+			return PublishedContentType.Get(ModelItemType, ModelTypeAlias);
+		}
+#pragma warning restore 0109
+
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<ContactUs, TValue>> selector)
+		{
+			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
 		}
 	}
 

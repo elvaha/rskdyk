@@ -3253,7 +3253,6 @@
     <Content Include="Umbraco\Webservices\TreeDataService.ashx" />
     <Content Include="Umbraco\Webservices\UltimatePickerAutoCompleteHandler.ashx" />
     <Content Include="Umbraco\Xslt\Web.config" />
-    <Content Include="Views\Contact.cshtml" />
     <Content Include="Views\EventItem.cshtml" />
     <Content Include="Views\Events.cshtml" />
     <Content Include="Views\Gallery.cshtml" />
@@ -3277,6 +3276,7 @@
     <Content Include="Views\Partials\Login.cshtml" />
     <Content Include="Views\Partials\Gallery.cshtml" />
     <Content Include="Views\ProfilePage.cshtml" />
+    <Content Include="Views\ContactUs.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
