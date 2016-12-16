@@ -26,7 +26,9 @@
                 <ul>
                     @foreach(var child in item.Children.Where("Visible")){
                     @*Styling for dropdown children of page*@
-                    <li>@child.Name</li>
+                    <li>
+                        <a href="@child.Url">@child.Name</a>
+                    </li>
                     }
                 </ul>
             </li>

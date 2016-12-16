@@ -6,5 +6,8 @@
 
 @Umbraco.Field("title")
 @Umbraco.Field("description")
-	
 @Html.Partial("Gallery")
+	
+	@if (CurrentPage.Children.Where("Visible").Count() > 0){	 
+		@Html.Partial("BoardMemberMacro")
+	}

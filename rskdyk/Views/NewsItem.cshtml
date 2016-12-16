@@ -3,6 +3,16 @@
 @{
 	Layout = "Master.cshtml";
 }
-@Umbraco.Field("header")
-@Umbraco.Field("image")
+
+
+
+@Umbraco.Field("title")
+@Umbraco.Field("author")
+@{
+    if (CurrentPage.HasValue("image"))
+    {
+        var dynamicMediaItem = Umbraco.Media(CurrentPage.image);
+        <img src="@dynamicMediaItem.umbracoFile" alt="@dynamicMediaItem.Name"/>
+    }
+}
 @Umbraco.Field("body")

@@ -323,6 +323,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\cache\2\3\6\6\c\8\2366c8f20d3ae677bcce15c14f0c3699e1c86586.jpg" />
+    <Content Include="App_Data\cache\2\7\2\7\1\2\2727123f90fb134c47688b3e2b352f80ef63e3e7.jpg" />
+    <Content Include="App_Data\cache\6\0\7\4\1\a\60741aad701862937e7bd35e287c5af71e31d467.jpg" />
+    <Content Include="App_Data\cache\e\c\0\6\d\0\ec06d0482dbf034d4f8775099269119a86f3b3fd.jpg" />
     <Content Include="App_Data\Logs\UmbracoTraceLog.Elias-PC.txt" />
     <Content Include="App_Data\NuGetBackup\20161212-203209\bin\AutoMapper.dll" />
     <Content Include="App_Data\NuGetBackup\20161212-203209\bin\AutoMapper.Net4.dll" />
@@ -3280,6 +3284,23 @@
     <Content Include="Views\ProfilePage.cshtml" />
     <Content Include="Views\ContactUs.cshtml" />
     <Content Include="Views\Partials\_ImageUpload.cshtml" />
+    <Content Include="Views\Partials\BoardMemberMacro.cshtml" />
+    <Content Include="Views\Partials\Forms\DatePicker.cshtml" />
+    <Content Include="Views\Partials\Forms\Export\csv.cshtml" />
+    <Content Include="Views\Partials\Forms\Fieldtypes\FieldType.CheckBox.cshtml" />
+    <Content Include="Views\Partials\Forms\Fieldtypes\FieldType.CheckBoxList.cshtml" />
+    <Content Include="Views\Partials\Forms\Fieldtypes\FieldType.DatePicker.cshtml" />
+    <Content Include="Views\Partials\Forms\Fieldtypes\FieldType.DropDownList.cshtml" />
+    <Content Include="Views\Partials\Forms\Fieldtypes\FieldType.FileUpload.cshtml" />
+    <Content Include="Views\Partials\Forms\Fieldtypes\FieldType.HiddenField.cshtml" />
+    <Content Include="Views\Partials\Forms\Fieldtypes\FieldType.PasswordField.cshtml" />
+    <Content Include="Views\Partials\Forms\Fieldtypes\FieldType.RadioButtonList.cshtml" />
+    <Content Include="Views\Partials\Forms\Fieldtypes\Fieldtype.Recaptcha.cshtml" />
+    <Content Include="Views\Partials\Forms\Fieldtypes\FieldType.Text.cshtml" />
+    <Content Include="Views\Partials\Forms\Fieldtypes\FieldType.Textarea.cshtml" />
+    <Content Include="Views\Partials\Forms\Fieldtypes\FieldType.Textfield.cshtml" />
+    <Content Include="Views\Partials\Forms\Form.cshtml" />
+    <Content Include="Views\Partials\Forms\Script.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
