@@ -1,0 +1,6 @@
+﻿@model rskdyk.Models.ImageUploadModelView
+@using (Html.BeginUmbracoForm("HandleImagekUploadForm", "ImageUploadSurface"))
+{
+    <input type="file" name="imageFile" id="imageFile" multiple/>
+    <input type="submit" value="Submit" />
+}

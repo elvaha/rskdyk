@@ -2,3 +2,14 @@
 @{
 	Layout = "Master.cshtml";
 }
+
+
+@{ 
+    var user = umbraco.helper.GetCurrentUmbracoUser();
+    
+}
+
+@user.Name
+@user.Email
+
+@Html.Partial("_ImageUpload")

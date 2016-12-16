@@ -3041,7 +3041,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\ContactFormSurfaceController.cs" />
+    <Compile Include="Controllers\ImageUploadSurfaceController.cs" />
     <Compile Include="Models\ContactFormModelView.cs" />
+    <Compile Include="Models\ImageUploadModelView.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
@@ -3277,6 +3279,7 @@
     <Content Include="Views\Partials\Gallery.cshtml" />
     <Content Include="Views\ProfilePage.cshtml" />
     <Content Include="Views\ContactUs.cshtml" />
+    <Content Include="Views\Partials\_ImageUpload.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -3293,6 +3296,7 @@
     <Folder Include="obj\Debug\TempPE\" />
     <Folder Include="Views\ContactFormSurface\" />
     <Folder Include="Views\Home\" />
+    <Folder Include="Views\ImageUploadSurface\" />
     <Folder Include="Views\MacroPartials\" />
   </ItemGroup>
   <ItemGroup>
