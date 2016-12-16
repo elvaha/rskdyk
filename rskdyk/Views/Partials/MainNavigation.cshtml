@@ -1,5 +1,8 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
-
+@using Umbraco.Web.Models
+@using Umbraco.Web
+@using Umbraco.Web.Models
+@using Umbraco.Web.Controllers
 
 @*
     This snippet displays a list of links of the pages immediately under the top-most page in the content tree.
@@ -8,7 +11,7 @@
 *@
 
 @{ var selection = CurrentPage.Site().Children.Where("Visible");
-    //var loginStatus = Members.GetCurrentLoginStatus()
+    var loginStatus = Members.GetCurrentLoginStatus();
 }
 
 <ul>
@@ -35,11 +38,13 @@
             </li>
             }
             }
-            @*<li>
-                    @if(loginStatus.isLoggedIn){
+            <li>
+                    @if(loginStatus.IsLoggedIn){
+                        //Show some logout and link to profile page
+                        <a href="/profile-page/">Profile</a>
                         <a href='@Url.Action("Logout", "LoginSurface")'>Logout</a>
                     }else{
-                        <a href="/login/">Login</a>
+                        <a href="/login-page/">Login</a>
                     }
-                </li>*@
+                </li>
         </ul>

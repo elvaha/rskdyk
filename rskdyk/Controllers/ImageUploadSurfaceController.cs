@@ -18,7 +18,7 @@ namespace rskdyk.Controllers
         // GET: ImageUploadSurface
         public ActionResult Index()
         {
-            return PartialView("_ImageUpload", new ImageUploadModelView());
+            return PartialView("ImageUpload", new ImageUploadModelView());
         }
 
         [HttpPost]
