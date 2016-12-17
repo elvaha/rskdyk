@@ -4,4 +4,31 @@
 	Layout = "Master.cshtml";
 }
 
-@Umbraco.Field("title")
+<div class="fold">
+    <div class="fold__content">
+        <header class="fold__header">
+            <h1 class="fold__title">@CurrentPage.title</h1>
+        </header>
+    </div>
+</div>
+
+@{
+
+    var eventList = CurrentPage.Children().OrderBy("CreateDate desc");
+
+    <section>
+        @foreach (var eventItem in eventList)
+        {
+            <article class="preview">
+                <header class="preview__header">
+                    <h1 class="preview__title">@eventItem.title</h1>
+                </header>
+                <p class="preview__date">@eventItem.date.ToString("dd/mm/yyyy")</p>
+                <p class="preview__description">@eventItem.preview</p>
+                <a class="preview__link" href="@eventItem.Url">Read more</a>
+                <hr />
+            </article>
+        }
+    </section>
+
+}

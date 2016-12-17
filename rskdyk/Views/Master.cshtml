@@ -6,19 +6,78 @@
 
 <!DOCTYPE html>
 <html>
-    <head></head>
+    <head>
+        <title>RSKDYK</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,700,900&amp;subset=latin-ext" rel="stylesheet">
+        <link rel='stylesheet' href='/css/reset.css'/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        @RenderSection("gallery", false)
+        <script type="text/javascript" src="/scripts/script.js"></script>
+        <link rel='stylesheet' href='/css/style.css' />
+	</head>
     <body>
-        <header>
-            @Html.Partial("MainNavigation")
-        </header>
-        <main>
-            @RenderBody()
-        </main>
-        <footer>
+        <nav class="navigation">
+            <div class="navigation__header">
+                <a class="navigation__logo navigation__logo--font" href="/">RSKDYK</a>
+                <a class="navigation__menu-btn" href="#">
+                    <img src="/media/1011/menu.png">
+                </a>
+            </div>
 
+            @{
+                var newsPage = Umbraco.Content(1075);
+                var eventPage = Umbraco.Content(1079);
+                var membershipPage = Umbraco.Content(1120);
+                var coursePage = Umbraco.Content(1117);
+                var aboutPage = Umbraco.Content(1087);
+                var aboutPageChildren = aboutPage.Children();
+                var contactPage = Umbraco.Content(1134);
+            }
+
+            <div class="navigation__content">
+                <ul class="navigation__root-menu">
+                    <li class="navigation__menu-item navigation__menu-item--font"><a href="@newsPage.Url">@newsPage.Name</a></li>
+                    <li class="navigation__menu-item navigation__menu-item--font"><a href="@eventPage.Url">@eventPage.Name</a></li>
+                    <li class="navigation__menu-item navigation__menu-item--font"><a href="@membershipPage.Url">@membershipPage.Name</a></li>
+                    <li class="navigation__menu-item navigation__menu-item--font"><a href="@coursePage.Url">@coursePage.Name</a></li>
+                    <li class="navigation__menu-item navigation__menu-item--font">
+                        <a href="@aboutPage.Url">@aboutPage.Name</a>
+                        <ul class="navigation__submenu working">
+                            
+                            @foreach (var page in aboutPageChildren)
+                            {
+                                <li class="navigation__submenu-item navigation__submenu-item--font">
+                                    <a href="@page.Url">@page.Name</a>
+                                </li>
+                            }
+
+                        </ul>
+
+                    </li>
+                    <li class="navigation__menu-item navigation__menu-item--font"><a href="@contactPage.Url">@contactPage.Name</a></li>
+                    <li class="navigation__menu-item navigation__menu-item--font"><a href="#">Log på</a></li>
+                </ul>
+            </div>
+        </nav>
+		<main>
+			@RenderBody()						
+		</main>
+        <footer class="site-footer">
+            <section class="site-footer__navigation">
+                <ul>
+                    <li><a class="site-footer__link" href="@newsPage.Url">@newsPage.Name</a></li>
+                    <li><a class="site-footer__link" href="@eventPage.Url">@eventPage.Name</a></li>
+                    <li><a class="site-footer__link" href="@membershipPage.Url">@membershipPage.Name</a></li>
+                    <li><a class="site-footer__link" href="@coursePage.Url">@coursePage.Name</a></li>
+                    <li><a class="site-footer__link" href="@contactPage.Url">@contactPage.Name</a></li>
+                </ul>
+            </section>
+            <section class="site-footer__social">
+                <img src="/media/1007/facebook.png">
+                <img src="/media/1012/twitter.png">
+                <img src="/media/1009/google.png">
+            </section>
         </footer>
-        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.1.min.js"></script>
-        <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
-        <script src="https://ajax.aspnetcdn.com/ajax/mvc/5.1/jquery.validate.unobtrusive.min.js"></script>
     </body>
 </html>

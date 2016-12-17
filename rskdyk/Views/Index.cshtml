@@ -2,31 +2,51 @@
 @{
     Layout = "Master.cshtml";
 }
-@Umbraco.Field("title")
-@Umbraco.Field("subTitle")
-@Umbraco.Field("contentTop")
-@Umbraco.Field("contentBot")
-@Umbraco.Field("ctaTitle")
-@Umbraco.Field("actionLink")
-@*@{
-    var statements = CurrentPage.Site().Children("testimonials");
-    var rnd = new Random();
-    var firstPick = rnd.Next(statements.Count() + 1);
 
-    var secondPick = 0;
+<div class="fold">
+    <div class="fold__content">
+        <header class="fold__header">
+            <h1 class="fold__title">@CurrentPage.title</h1>
+            <p class="fold__subtitle">@CurrentPage.subTitle</p>
+        </header>
+        <div class="fold__cta">
+            <p class="fold__message">Dive with us</p>
+            <img class="fold__image" src="/media/1005/arrow.png"/>
+        </div>
+    </div>
+</div>
+<section class="introduction node">
+    <div class="node__body">
+        <p class="introduction__primary">@CurrentPage.contentTop</p>
+        <p class="introduction__secondary">@CurrentPage.contentBot</p>
+    </div>
+</section>
+<section class="node media">
+    <div class="node__body">
+        <a class="media__message" href="/gallery">Click here to check out our gallery</a>
+    </div>
+</section>
+<section class="node">
+    <header class="node__header">
+        <h2 class="node__title">Our member's testimonials</h2>
+    </header>
+    <div class="node__body clearfix">
 
-    if (firstPick != statements.Count())
-    {
-        secondPick = firstPick + 1;
-    }
+        @foreach (var testimonial in Umbraco.Content(1094).Children().Where("selected"))
+        {
+            <article class="testimonial">
+                <p class="testimonial__content">@testimonial.memberStatement</p>
+                <p class="testimonial__name">@testimonial.memberName</p>
+            </article>
+        }
 
-    var statementOne = statements.getIndex(firstPick);
-    var statementTwo = statements.getIndex(secondPick);
-}
-<section></section>
-<section>
-    <p>@statementOne.statementName</p>
-    <p>@statementTwo.statementName</p>
-</section>*@
-<section></section>
-
+    </div>
+</section>
+<section class="node membership-cta">
+    <header class="node__header">
+        <h2 class="node__title membership-cta__message">@CurrentPage.ctaTitle</h2>
+    </header>
+    <div class="node__body">
+        <a class="membership-cta__link" href="@CurrentPage.actionLink">Læs mere</a>
+    </div>
+</section>

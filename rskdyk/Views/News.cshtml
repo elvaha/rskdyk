@@ -4,4 +4,33 @@
 	Layout = "Master.cshtml";
 }
 
-@Html.Partial("ChildListNavigation")
+<div class="fold">
+    <div class="fold__content">
+        <header class="fold__header">
+            <h1 class="fold__title">@CurrentPage.title</h1>
+        </header>
+    </div>
+</div>
+
+@{
+
+    var newsList = CurrentPage.Children().OrderBy("CreateDate desc");
+
+    <section>
+        @foreach (var news in newsList)
+        {
+        <article class="preview">
+            <header class="preview__header">
+                <h1 class="preview__title">@news.title</h1>
+                <p class="preview__subtitle">@news.subtitle</p>
+            </header>
+            <p class="preview__author">@news.author</p>
+            <p class="preview__date">@news.CreateDate.ToString("dd/mm/yyyy")</p>
+            <p class="preview__description">@news.preview</p>
+            <a class="preview__link" href="@news.Url">Read more</a>
+            <hr />
+        </article>
+        }
+    </section>
+
+}

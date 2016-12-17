@@ -4,5 +4,34 @@
 	Layout = "Master.cshtml";
 }
 
-Maybe something other than this, but a partial with styling
-@Html.Partial("ChildListNavigation")
+<div class="fold">
+    <div class="fold__content">
+        <header class="fold__header">
+            <h1 class="fold__title">EVENTS</h1>
+        </header>
+    </div>
+</div>
+
+<section class="courses clearfix">
+    <p class="courses__information">@CurrentPage.description</p>
+</section>
+
+@{
+
+    var courseList = CurrentPage.Children();
+
+    <section>
+        @foreach (var course in courseList)
+        {
+            <article class="preview">
+                <header class="preview__header">
+                    <h1 class="preview__title">@course.title</h1>
+                </header>
+                <p class="preview__description">@course.preview</p>
+                <a class="preview__link" href="@course.Url">Read more</a>
+                <hr />
+            </article>
+        }
+    </section>
+
+}

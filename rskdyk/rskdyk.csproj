@@ -579,6 +579,13 @@
     <Content Include="Config\Lang\ru-RU.user.xml" />
     <Content Include="Config\Lang\sv-SE.user.xml" />
     <Content Include="Config\Lang\zh-CN.user.xml" />
+    <Content Include="css\default-skin\default-skin.css" />
+    <Content Include="css\default-skin\default-skin.png" />
+    <Content Include="css\default-skin\default-skin.svg" />
+    <Content Include="css\default-skin\preloader.gif" />
+    <Content Include="css\photoswipe.css" />
+    <Content Include="css\reset.css" />
+    <Content Include="css\style.css" />
     <Content Include="default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="obj\Debug\rskdyk.csproj.FileListAbsolute.txt" />
@@ -586,6 +593,9 @@
     <Content Include="obj\Debug\rskdyk.pdb" />
     <Content Include="scripts\ai.0.15.0-build58334.js" />
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />
+    <Content Include="scripts\photoswipe-ui-default.min.js" />
+    <Content Include="scripts\photoswipe.min.js" />
+    <Content Include="scripts\script.js" />
     <Content Include="Umbraco\Actions\delete.aspx" />
     <Content Include="Umbraco\Actions\editContent.aspx" />
     <Content Include="Umbraco\Actions\preview.aspx" />

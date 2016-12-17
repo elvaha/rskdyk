@@ -1,0 +1,1392 @@
+.story__social p,
+.membership__information,
+.site-footer__navigation,
+.preview__description {
+    font-family: 'Lato';
+    font-weight: 300
+}
+
+.navigation__submenu-item--font,
+.preview__subtitle {
+    font-family: 'Lato';
+    font-weight: 300;
+    text-transform: uppercase
+}
+
+.fold__message,
+.testimonial__name,
+.story__date,
+.preview__date {
+    font-family: 'Lato';
+    font-weight: 700;
+    text-transform: uppercase
+}
+
+.membership-cta__link,
+.membership__payment,
+.preview__link,
+.navigation__logo--font,
+.navigation__menu-item--font,
+.fold__title,
+.node__title,
+.media__message,
+.story__title,
+.membership__title,
+.membership__price,
+.preview__title,
+.preview__author {
+    font-family: 'Lato';
+    font-weight: 900;
+    text-transform: uppercase
+}
+
+.fold__subtitle,
+.introduction__primary,
+.introduction__secondary,
+.testimonial__content,
+.story__description,
+.membership__description {
+    font-family: 'Lato';
+    font-weight: 300;
+    font-style: italic
+}
+
+.clearfix:before {
+    content: '';
+    display: table;
+    clear: both
+}
+
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both
+}
+
+a,
+a:visited,
+a:active,
+a:hover {
+    color: #fff;
+    text-decoration: none
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+.membership-cta__link,
+.membership__payment,
+.preview__link {
+    padding: 20px 40px;
+    color: #fff;
+    background-color: #e04c5a
+}
+
+.the-end {
+    border-top: 1px solid #8c8b8b;
+    text-align: center
+}
+
+.the-end:after {
+    content: '§';
+    display: inline-block;
+    position: relative;
+    top: -14px;
+    padding: 0 10px;
+    background: #f0f0f0;
+    color: #8c8b8b;
+    font-size: 18px;
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    transform: rotate(60deg)
+}
+
+.navigation--transparent-bg {
+    background-color: #161517
+}
+
+@media screen and (max-width: 969px) {
+    .navigation {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100
+    }
+    .navigation--expand {
+        height: 100vh
+    }
+    .navigation__header {
+        height: 52px;
+        padding: 10px;
+        background-color: #161517
+    }
+    .navigation__logo {
+        line-height: 32px;
+        vertical-align: middle
+    }
+    .navigation__menu-btn {
+        float: right;
+        width: 32px
+    }
+    .navigation__menu-btn img {
+        width: 100%;
+        vertical-align: middle
+    }
+    .navigation__content {
+        position: absolute;
+        top: 52px;
+        bottom: 0;
+        width: 100%;
+        height: calc(100% - 52px);
+        overflow: hidden;
+        background-color: #161517;
+        max-height: 0;
+        transition: max-height .75s
+    }
+    .navigation__content--scroll {
+        overflow: auto
+    }
+    .navigation__content--expand {
+        max-height: 100%;
+        transition: max-height .75s
+    }
+    .navigation__root-menu {
+        padding: 20px
+    }
+    .navigation__menu-item {
+        z-index: 200
+    }
+    .navigation__menu-item>a {
+        display: block;
+        padding: 5px 0;
+        font-size: 1.35rem;
+        text-align: center
+    }
+    .navigation__submenu {
+        display: none;
+        padding: 20px
+    }
+    .navigation__submenu-item>a {
+        display: block;
+        padding: 5px 0 10px;
+        font-size: 1.15rem;
+        text-align: center
+    }
+}
+
+@media screen and (min-width: 970px) {
+    .navigation {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100
+    }
+    .navigation__header {
+        float: left;
+        height: 52px;
+        padding: 10px
+    }
+    .navigation__logo {
+        line-height: 32px;
+        vertical-align: middle
+    }
+    .navigation__menu-btn {
+        display: none
+    }
+    .navigation__content {
+        width: 100%;
+        padding: 10px;
+        text-align: center
+    }
+    .navigation__menu-item {
+        position: relative;
+        display: inline-block;
+        line-height: 32px;
+        padding: 0 5px
+    }
+    .navigation__menu-item:last-of-type {
+        float: right
+    }
+    .navigation__menu-item:last-of-type .navigation__submenu {
+        left: auto;
+        right: 0
+    }
+    .navigation__submenu {
+        position: absolute;
+        top: 32px;
+        left: 0;
+        padding: 20px;
+        background-color: #161517;
+        display: none
+    }
+    .navigation__submenu-item {
+        white-space: nowrap;
+        text-align: left
+    }
+}
+
+.story__social p,
+.membership__information,
+.site-footer__navigation,
+.preview__description {
+    font-family: 'Lato';
+    font-weight: 300
+}
+
+.navigation__submenu-item--font,
+.preview__subtitle {
+    font-family: 'Lato';
+    font-weight: 300;
+    text-transform: uppercase
+}
+
+.fold__message,
+.testimonial__name,
+.story__date,
+.preview__date {
+    font-family: 'Lato';
+    font-weight: 700;
+    text-transform: uppercase
+}
+
+.membership-cta__link,
+.membership__payment,
+.preview__link,
+.navigation__logo--font,
+.navigation__menu-item--font,
+.fold__title,
+.node__title,
+.media__message,
+.story__title,
+.membership__title,
+.membership__price,
+.preview__title,
+.preview__author {
+    font-family: 'Lato';
+    font-weight: 900;
+    text-transform: uppercase
+}
+
+.fold__subtitle,
+.introduction__primary,
+.introduction__secondary,
+.testimonial__content,
+.story__description,
+.membership__description {
+    font-family: 'Lato';
+    font-weight: 300;
+    font-style: italic
+}
+
+.clearfix:before {
+    content: '';
+    display: table;
+    clear: both
+}
+
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both
+}
+
+a,
+a:visited,
+a:active,
+a:hover {
+    color: #fff;
+    text-decoration: none
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+.membership-cta__link,
+.membership__payment,
+.preview__link {
+    padding: 20px 40px;
+    color: #fff;
+    background-color: #e04c5a
+}
+
+.the-end {
+    border-top: 1px solid #8c8b8b;
+    text-align: center
+}
+
+.the-end:after {
+    content: '§';
+    display: inline-block;
+    position: relative;
+    top: -14px;
+    padding: 0 10px;
+    background: #f0f0f0;
+    color: #8c8b8b;
+    font-size: 18px;
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    transform: rotate(60deg)
+}
+
+.fold {
+    width: 100%;
+    background: url(/media/1006/bg.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: scroll
+}
+
+.fold__content {
+    width: 100%;
+    padding: 20px;
+    color: #fff;
+    text-align: center
+}
+
+.fold__header {
+    display: inline-block;
+    padding: 100px 0;
+    width: 100%;
+    max-width: 500px
+}
+
+.fold__title {
+    font-size: 1.5rem;
+    word-wrap: break-word
+}
+
+.fold__subtitle {
+    padding-top: 10px
+}
+
+.fold__cta {
+    padding: 100px 0 50px
+}
+
+.fold__image {
+    max-width: 72px
+}
+
+@media screen and (min-width: 750px) {
+    .fold__header {
+        padding: 150px 0;
+        max-width: 640px
+    }
+    .fold__title {
+        font-size: 2.5rem
+    }
+    .fold__subtitle {
+        font-size: 1.5rem
+    }
+    .fold__cta {
+        padding-bottom: 50px;
+        font-size: 1.15rem
+    }
+    .fold__image {
+        max-width: 96px
+    }
+}
+
+@media screen and (min-width: 1170px) {
+    .fold__header {
+        max-width: 900px
+    }
+    .fold__title {
+        font-size: 3.5rem
+    }
+    .fold__subtitle {
+        font-size: 1.75rem
+    }
+    .fold__cta {
+        padding-bottom: 100px
+    }
+}
+
+.story__social p,
+.membership__information,
+.site-footer__navigation,
+.preview__description {
+    font-family: 'Lato';
+    font-weight: 300
+}
+
+.navigation__submenu-item--font,
+.preview__subtitle {
+    font-family: 'Lato';
+    font-weight: 300;
+    text-transform: uppercase
+}
+
+.fold__message,
+.testimonial__name,
+.story__date,
+.preview__date {
+    font-family: 'Lato';
+    font-weight: 700;
+    text-transform: uppercase
+}
+
+.membership-cta__link,
+.membership__payment,
+.preview__link,
+.navigation__logo--font,
+.navigation__menu-item--font,
+.fold__title,
+.node__title,
+.media__message,
+.story__title,
+.membership__title,
+.membership__price,
+.preview__title,
+.preview__author {
+    font-family: 'Lato';
+    font-weight: 900;
+    text-transform: uppercase
+}
+
+.fold__subtitle,
+.introduction__primary,
+.introduction__secondary,
+.testimonial__content,
+.story__description,
+.membership__description {
+    font-family: 'Lato';
+    font-weight: 300;
+    font-style: italic
+}
+
+.clearfix:before {
+    content: '';
+    display: table;
+    clear: both
+}
+
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both
+}
+
+a,
+a:visited,
+a:active,
+a:hover {
+    color: #fff;
+    text-decoration: none
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+.membership-cta__link,
+.membership__payment,
+.preview__link {
+    padding: 20px 40px;
+    color: #fff;
+    background-color: #e04c5a
+}
+
+.the-end {
+    border-top: 1px solid #8c8b8b;
+    text-align: center
+}
+
+.the-end:after {
+    content: '§';
+    display: inline-block;
+    position: relative;
+    top: -14px;
+    padding: 0 10px;
+    background: #f0f0f0;
+    color: #8c8b8b;
+    font-size: 18px;
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    transform: rotate(60deg)
+}
+
+.node {
+    padding: 50px 20px
+}
+
+.node__header {
+    max-width: 600px;
+    margin: 0 auto;
+    padding-bottom: 50px
+}
+
+.node__title {
+    font-size: 1.25rem;
+    text-align: center
+}
+
+.node__subtitle {
+    padding: 10px 0
+}
+
+.node__body {
+    max-width: 600px;
+    margin: 0 auto
+}
+
+@media screen and (min-width: 750px) {
+    .node {
+        padding: 130px 20px
+    }
+    .node__title {
+        font-size: 1.5rem
+    }
+}
+
+@media screen and (min-width: 970px) {
+    .node__title {
+        font-size: 1.75rem
+    }
+    .node__body {
+        max-width: 700px;
+        margin: 0 auto
+    }
+}
+
+@media screen and (min-width: 1170px) {
+    .node {
+        padding: 200px 20px
+    }
+    .node__title {
+        font-size: 2rem
+    }
+    .node__body {
+        max-width: 800px;
+        margin: 0 auto
+    }
+}
+
+.introduction__primary,
+.introduction__secondary {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1.15rem;
+    line-height: 120%;
+    text-align: center
+}
+
+.introduction__secondary {
+    padding-top: 30px
+}
+
+@media screen and (min-width: 750px) {
+    .introduction__primary,
+    .introduction__secondary {
+        font-size: 1.25rem
+    }
+}
+
+@media screen and (min-width: 970px) {
+    .introduction__primary,
+    .introduction__secondary {
+        font-size: 1.5rem
+    }
+}
+
+.media {
+    text-align: center;
+    background: url(/media/1008/gallery.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: scroll
+}
+
+.media__message {
+    display: inline-block;
+    padding: 20px 0;
+    font-size: 1.5rem
+}
+
+.membership-cta__link {
+    width: 100%
+}
+
+@media screen and (min-width: 750px) {
+    .media__message {
+        font-size: 2rem
+    }
+}
+
+@media screen and (min-width: 970px) {
+    .media__message {
+        font-size: 2.5rem
+    }
+}
+
+@media screen and (min-width: 1170px) {
+    .media__message {
+        font-size: 3rem
+    }
+}
+
+.testimonial {
+    padding-bottom: 50px
+}
+
+.testimonial__content {
+    line-height: 140%;
+    text-align: center
+}
+
+.testimonial__name {
+    font-size: 1.15rem
+}
+
+@media screen and (min-width: 750px) {
+    .testimonial {
+        padding: 50px 20px
+    }
+    .testimonial__content {
+        padding-bottom: 20px;
+        font-size: 1.25rem
+    }
+    .testimonial__name {
+        font-size: 1.35rem;
+        text-align: center
+    }
+}
+
+@media screen and (min-width: 970px) {
+    .testimonial__content {
+        font-size: 1.55rem
+    }
+    .testimonial__name {
+        font-size: 1.65rem
+    }
+}
+
+@media screen and (min-width: 1170px) {
+    .testimonial__content {
+        font-size: 1.75rem
+    }
+    .testimonial__name {
+        font-size: 1.85rem
+    }
+}
+
+.membership-cta {
+    text-align: center;
+    background: url(/media/1010/membership.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: scroll
+}
+
+.membership-cta__message {
+    color: #fff
+}
+
+.membership-cta__link {
+    display: inline-block;
+    max-width: 400px
+}
+
+@media screen and (min-width: 750px) {
+    .membership-cta__link {
+        font-size: 1.25rem
+    }
+}
+
+@media screen and (min-width: 970px) {
+    .membership-cta__link {
+        font-size: 1.5rem
+    }
+}
+
+@media screen and (min-width: 1170px) {
+    .membership-cta__link {
+        font-size: 1.75rem
+    }
+}
+
+.story__social p,
+.membership__information,
+.site-footer__navigation,
+.preview__description {
+    font-family: 'Lato';
+    font-weight: 300
+}
+
+.navigation__submenu-item--font,
+.preview__subtitle {
+    font-family: 'Lato';
+    font-weight: 300;
+    text-transform: uppercase
+}
+
+.fold__message,
+.testimonial__name,
+.story__date,
+.preview__date {
+    font-family: 'Lato';
+    font-weight: 700;
+    text-transform: uppercase
+}
+
+.membership-cta__link,
+.membership__payment,
+.preview__link,
+.navigation__logo--font,
+.navigation__menu-item--font,
+.fold__title,
+.node__title,
+.media__message,
+.story__title,
+.membership__title,
+.membership__price,
+.preview__title,
+.preview__author {
+    font-family: 'Lato';
+    font-weight: 900;
+    text-transform: uppercase
+}
+
+.fold__subtitle,
+.introduction__primary,
+.introduction__secondary,
+.testimonial__content,
+.story__description,
+.membership__description {
+    font-family: 'Lato';
+    font-weight: 300;
+    font-style: italic
+}
+
+.clearfix:before {
+    content: '';
+    display: table;
+    clear: both
+}
+
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both
+}
+
+a,
+a:visited,
+a:active,
+a:hover {
+    color: #fff;
+    text-decoration: none
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+.membership-cta__link,
+.membership__payment,
+.preview__link {
+    padding: 20px 40px;
+    color: #fff;
+    background-color: #e04c5a
+}
+
+.the-end {
+    border-top: 1px solid #8c8b8b;
+    text-align: center
+}
+
+.the-end:after {
+    content: '§';
+    display: inline-block;
+    position: relative;
+    top: -14px;
+    padding: 0 10px;
+    background: #f0f0f0;
+    color: #8c8b8b;
+    font-size: 18px;
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    transform: rotate(60deg)
+}
+
+.story {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 150px 20px 0
+}
+
+.story__header {
+    text-align: center
+}
+
+.story__title {
+    font-size: 1.5rem;
+    padding-bottom: 20px
+}
+
+.story__date {
+    padding-bottom: 40px
+}
+
+.story__description {
+    text-align: center;
+    padding: 20px 40px;
+    line-height: 120%
+}
+
+.story__media {
+    max-width: 100%;
+    height: 500px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26)
+}
+
+.story__footer {
+    padding: 40px;
+    text-align: center
+}
+
+.story__social {
+    display: inline-block
+}
+
+.story__social:first-of-type {
+    padding-right: 20px
+}
+
+.story__social img {
+    display: inline-block;
+    max-width: 24px;
+    vertical-align: middle
+}
+
+.story__social p {
+    display: inline-block;
+    padding-left: 2.5px;
+    font-size: 1.5rem;
+    line-height: 24px;
+    vertical-align: middle
+}
+
+@media screen and (min-width: 750px) {
+    .story__title {
+        font-size: 2rem
+    }
+    .story__date {
+        font-size: 1.25rem
+    }
+    .story__description {
+        font-size: 1.25rem
+    }
+}
+
+@media screen and (min-width: 1170px) {
+    .story__title {
+        font-size: 3rem
+    }
+    .story__date {
+        font-size: 1.5rem
+    }
+    .story__description {
+        font-size: 1.5rem
+    }
+}
+
+.story__social p,
+.membership__information,
+.site-footer__navigation,
+.preview__description {
+    font-family: 'Lato';
+    font-weight: 300
+}
+
+.navigation__submenu-item--font,
+.preview__subtitle {
+    font-family: 'Lato';
+    font-weight: 300;
+    text-transform: uppercase
+}
+
+.fold__message,
+.testimonial__name,
+.story__date,
+.preview__date {
+    font-family: 'Lato';
+    font-weight: 700;
+    text-transform: uppercase
+}
+
+.membership-cta__link,
+.membership__payment,
+.preview__link,
+.navigation__logo--font,
+.navigation__menu-item--font,
+.fold__title,
+.node__title,
+.media__message,
+.story__title,
+.membership__title,
+.membership__price,
+.preview__title,
+.preview__author {
+    font-family: 'Lato';
+    font-weight: 900;
+    text-transform: uppercase
+}
+
+.fold__subtitle,
+.introduction__primary,
+.introduction__secondary,
+.testimonial__content,
+.story__description,
+.membership__description {
+    font-family: 'Lato';
+    font-weight: 300;
+    font-style: italic
+}
+
+.clearfix:before {
+    content: '';
+    display: table;
+    clear: both
+}
+
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both
+}
+
+a,
+a:visited,
+a:active,
+a:hover {
+    color: #fff;
+    text-decoration: none
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+.membership-cta__link,
+.membership__payment,
+.preview__link {
+    padding: 20px 40px;
+    color: #fff;
+    background-color: #e04c5a
+}
+
+.the-end {
+    border-top: 1px solid #8c8b8b;
+    text-align: center
+}
+
+.the-end:after {
+    content: '§';
+    display: inline-block;
+    position: relative;
+    top: -14px;
+    padding: 0 10px;
+    background: #f0f0f0;
+    color: #8c8b8b;
+    font-size: 18px;
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    transform: rotate(60deg)
+}
+
+.membership {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 150px 0
+}
+
+.membership__information {
+    padding: 0 20px 100px;
+    line-height: 120%;
+    text-align: center
+}
+
+.membership__type {
+    max-width: 400px;
+    padding: 20px;
+    margin: 0 auto 20px;
+    text-align: center
+}
+
+.membership__title {
+    padding-bottom: 20px
+}
+
+.membership__description {
+    padding-bottom: 20px
+}
+
+.membership__price {
+    padding-bottom: 30px;
+    font-size: 4rem
+}
+
+.membership__payment {
+    display: block
+}
+
+.membership__currency {
+    font-size: 2rem
+}
+
+@media screen and (min-width: 750px) {
+    .membership__information {
+        font-size: 1.25rem
+    }
+    .membership__type {
+        float: left;
+        width: 50%
+    }
+    .membership__title {
+        font-size: 1.5rem
+    }
+}
+
+@media screen and (min-width: 1170px) {
+    .membership__information {
+        font-size: 1.5rem
+    }
+    .membership__title {
+        font-size: 1.75rem
+    }
+}
+
+.story__social p,
+.membership__information,
+.site-footer__navigation,
+.preview__description {
+    font-family: 'Lato';
+    font-weight: 300
+}
+
+.navigation__submenu-item--font,
+.preview__subtitle {
+    font-family: 'Lato';
+    font-weight: 300;
+    text-transform: uppercase
+}
+
+.fold__message,
+.testimonial__name,
+.story__date,
+.preview__date {
+    font-family: 'Lato';
+    font-weight: 700;
+    text-transform: uppercase
+}
+
+.membership-cta__link,
+.membership__payment,
+.preview__link,
+.navigation__logo--font,
+.navigation__menu-item--font,
+.fold__title,
+.node__title,
+.media__message,
+.story__title,
+.membership__title,
+.membership__price,
+.preview__title,
+.preview__author {
+    font-family: 'Lato';
+    font-weight: 900;
+    text-transform: uppercase
+}
+
+.fold__subtitle,
+.introduction__primary,
+.introduction__secondary,
+.testimonial__content,
+.story__description,
+.membership__description {
+    font-family: 'Lato';
+    font-weight: 300;
+    font-style: italic
+}
+
+.clearfix:before {
+    content: '';
+    display: table;
+    clear: both
+}
+
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both
+}
+
+a,
+a:visited,
+a:active,
+a:hover {
+    color: #fff;
+    text-decoration: none
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+.membership-cta__link,
+.membership__payment,
+.preview__link {
+    padding: 20px 40px;
+    color: #fff;
+    background-color: #e04c5a
+}
+
+.the-end {
+    border-top: 1px solid #8c8b8b;
+    text-align: center
+}
+
+.the-end:after {
+    content: '§';
+    display: inline-block;
+    position: relative;
+    top: -14px;
+    padding: 0 10px;
+    background: #f0f0f0;
+    color: #8c8b8b;
+    font-size: 18px;
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    transform: rotate(60deg)
+}
+
+.site-footer {
+    padding: 120px 20px 30px
+}
+
+.site-footer__navigation {
+    text-align: center
+}
+
+.site-footer__navigation li {
+    display: inline-block;
+    padding: 10px
+}
+
+.site-footer__link,
+a {
+    color: #000
+}
+
+.site-footer__link:visited,
+.site-footer__link:active,
+.site-footer__link:hover,
+a:visited,
+a:active,
+a:hover {
+    color: #000
+}
+
+.site-footer__social {
+    text-align: center
+}
+
+.site-footer__social img {
+    padding: 20px;
+    max-width: 88px
+}
+
+.story__social p,
+.membership__information,
+.site-footer__navigation,
+.preview__description {
+    font-family: 'Lato';
+    font-weight: 300
+}
+
+.navigation__submenu-item--font,
+.preview__subtitle {
+    font-family: 'Lato';
+    font-weight: 300;
+    text-transform: uppercase
+}
+
+.fold__message,
+.testimonial__name,
+.story__date,
+.preview__date {
+    font-family: 'Lato';
+    font-weight: 700;
+    text-transform: uppercase
+}
+
+.membership-cta__link,
+.membership__payment,
+.preview__link,
+.navigation__logo--font,
+.navigation__menu-item--font,
+.fold__title,
+.node__title,
+.media__message,
+.story__title,
+.membership__title,
+.membership__price,
+.preview__title,
+.preview__author {
+    font-family: 'Lato';
+    font-weight: 900;
+    text-transform: uppercase
+}
+
+.fold__subtitle,
+.introduction__primary,
+.introduction__secondary,
+.testimonial__content,
+.story__description,
+.membership__description {
+    font-family: 'Lato';
+    font-weight: 300;
+    font-style: italic
+}
+
+.clearfix:before {
+    content: '';
+    display: table;
+    clear: both
+}
+
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both
+}
+
+a,
+a:visited,
+a:active,
+a:hover {
+    color: #fff;
+    text-decoration: none
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+.membership-cta__link,
+.membership__payment,
+.preview__link {
+    padding: 20px 40px;
+    color: #fff;
+    background-color: #e04c5a
+}
+
+.the-end {
+    border-top: 1px solid #8c8b8b;
+    text-align: center
+}
+
+.the-end:after {
+    content: '§';
+    display: inline-block;
+    position: relative;
+    top: -14px;
+    padding: 0 10px;
+    background: #f0f0f0;
+    color: #8c8b8b;
+    font-size: 18px;
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    transform: rotate(60deg)
+}
+
+.preview {
+    max-width: 700px;
+    padding: 150px 20px 0;
+    margin: 0 auto
+}
+
+.preview__header {
+    padding-bottom: 40px
+}
+
+.preview__title {
+    padding-bottom: 10px;
+    font-size: 1.35rem
+}
+
+.preview__author {
+    padding-bottom: 5px
+}
+
+.preview__date {
+    padding-bottom: 20px
+}
+
+.preview__description {
+    padding-bottom: 20px
+}
+
+.preview__link {
+    display: inline-block
+}
+
+@media screen and (min-width: 750px) {
+    .preview__title {
+        font-size: 1.75rem
+    }
+    .preview__subtitle {
+        font-size: 1.25rem
+    }
+    .preview__author {
+        font-size: 1.25rem
+    }
+    .preview__date {
+        font-size: 1.25rem
+    }
+    .preview__description {
+        font-size: 1.25rem
+    }
+}
+
+@media screen and (min-width: 1170px) {
+    .preview__title {
+        font-size: 2.15rem
+    }
+    .preview__subtitle {
+        font-size: 1.5rem
+    }
+    .preview__author {
+        font-size: 1.5rem
+    }
+    .preview__date {
+        font-size: 1.5rem
+    }
+    .preview__description {
+        font-size: 1.5rem
+    }
+}

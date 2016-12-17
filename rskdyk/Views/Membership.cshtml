@@ -4,4 +4,28 @@
 	Layout = "Master.cshtml";
 }
 
-@Html.Partial("ChildListNavigation")
+<div class="fold">
+    <div class="fold__content">
+        <header class="fold__header">
+            <h1 class="fold__title">@CurrentPage.title</h1>
+        </header>
+    </div>
+</div>
+
+@{ 
+    var membershipTypeList = CurrentPage.Children();
+}
+
+<section class="membership clearfix">
+    <p class="membership__information">@CurrentPage.description</p>
+
+    @foreach (var type in membershipTypeList)
+    {
+        <article class="membership__type">
+            <p class="membership__title">@type.title</p>
+            <p class="membership__description">@type.description</p>
+            <p class="membership__price">@type.price<span class="membership__currency"> DKK</span></p>
+            <a class="membership__payment">Payment</a>
+        </article>
+    }
+</section>
