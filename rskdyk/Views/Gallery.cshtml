@@ -6,7 +6,7 @@
 @section gallery {
 
 
-    <link rel='stylesheet' href='~/css/photoswipe.css' />
+    @*<link rel='stylesheet' href='~/css/photoswipe.css' />
     <link rel='stylesheet' href='~/css/default-skin/default-skin.css' />
     <script type="text/javascript" src="~/scripts/photoswipe.min.js"></script>
     <script type="text/javascript" src="~/scripts/photoswipe-ui-default.min.js"></script>
@@ -54,7 +54,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>*@
 
 
 
@@ -81,7 +81,7 @@
             </header>
             <p class="story__description">@story.storyDescription</p>
 
-            @{
+            @*@{
                 if (story.Content.hasValue("galleryPicker"))
                 {
                     var imagesList = story.galleryPicker.Split(new string[] { "," }, StringSplitOptions.RemoveEmptyEntries);
@@ -103,7 +103,7 @@
 
                     </div>
                 }
-            }
+            }*@
 
             @if (story.storyPicture != null)
                 {
@@ -115,7 +115,7 @@
                 <ul>
                     <li class="story__social">
                         <img src="/media/1007/facebook.png">
-                        <p>Share</p>
+                        <p>Del</p>
                     </li>
                     <li class="story__social">
                         <img src="/media/1012/twitter.png">
