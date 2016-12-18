@@ -1,5 +1,10 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
 @using ContentModels = Umbraco.Web.PublishedContentModels;
+@using System.Web.Mvc.Html
+@using ClientDependency.Core.Mvc
+@using Umbraco.Web
+@using Umbraco.Web.Models
+@using Umbraco.Web.Controllers
 @{
 	Layout = null;
 }
@@ -33,6 +38,7 @@
                 var aboutPage = Umbraco.Content(1087);
                 var aboutPageChildren = aboutPage.Children();
                 var contactPage = Umbraco.Content(1134);
+				var loginPage = Umbraco.Content(1136);
             }
 
             <div class="navigation__content">
@@ -43,7 +49,7 @@
                     <li class="navigation__menu-item navigation__menu-item--font"><a href="@coursePage.Url">@coursePage.Name</a></li>
                     <li class="navigation__menu-item navigation__menu-item--font">
                         <a href="@aboutPage.Url">@aboutPage.Name</a>
-                        <ul class="navigation__submenu working">
+                        <ul class="navigation__submenu">
                             
                             @foreach (var page in aboutPageChildren)
                             {
@@ -56,7 +62,47 @@
 
                     </li>
                     <li class="navigation__menu-item navigation__menu-item--font"><a href="@contactPage.Url">@contactPage.Name</a></li>
-                    <li class="navigation__menu-item navigation__menu-item--font"><a href="#">Log på</a></li>
+
+                    @{
+                        var loginStatusModel = Members.GetCurrentLoginStatus();
+
+                        Html.EnableClientValidation();
+                        Html.EnableUnobtrusiveJavaScript();
+                        Html.RequiresJs("/umbraco_client/ui/jquery.js");
+                        Html.RequiresJs("/umbraco_client/Application/JQuery/jquery.validate.min.js");
+                        Html.RequiresJs("/umbraco_client/Application/JQuery/jquery.validate.unobtrusive.min.js");
+
+                        var logoutModel = new PostRedirectModel();
+                        logoutModel.RedirectUrl = "/";
+                    }
+                    @Html.RenderJsHere()
+                    @if (loginStatusModel.IsLoggedIn)
+                    {
+
+                        var profilePage = Umbraco.Content(1135);
+                        var siteMember = "Hi " + @loginStatusModel.Name + "!";
+                        <li class="navigation__menu-item navigation__menu-item--font">
+                            <a href="#">@siteMember</a>
+                            <ul class="navigation__submenu">
+                                <li class="navigation__submenu-item navigation__submenu-item--font">
+                                    <a href="@profilePage.Url">Profil</a>
+                                </li>
+                                <li class="navigation__submenu-item navigation__submenu-item--font">
+                                    @using (Html.BeginUmbracoForm<UmbLoginStatusController>("HandleLogout", new Object { }, new { @id = "logout-btn" }))
+                                    {
+                                        <input id="logout-btn" type="submit" value="Log ud">
+                                        @Html.HiddenFor(m => logoutModel.RedirectUrl)
+                                    }
+                                </li>
+                            </ul>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="navigation__menu-item navigation__menu-item--font"><a href="@loginPage.Url">@loginPage.Name</a></li>
+                    }
+
+
                 </ul>
             </div>
         </nav>

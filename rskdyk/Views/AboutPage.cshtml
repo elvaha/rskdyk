@@ -4,10 +4,13 @@
 	Layout = "Master.cshtml";
 }
 
-@Umbraco.Field("title")
-@Umbraco.Field("description")
-@Html.Partial("Gallery")
-	
-	@if (CurrentPage.Children.Where("Visible").Count() > 0){	 
-		@Html.Partial("BoardMemberMacro")
-	}
+<div class="fold">
+    <div class="fold__content">
+        <header class="fold__header">
+            <h1 class="fold__title">@Umbraco.Field("title")</h1>
+        </header>
+    </div>
+</div>
+<section class="information">
+    <div class="information__content">@Umbraco.Field("description")</div>
+</section>

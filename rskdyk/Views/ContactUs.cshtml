@@ -4,4 +4,14 @@
 	Layout = "Master.cshtml";
 }
 
-@Html.Action("Index", "ContactFormSurface")
+<div class="fold">
+    <div class="fold__content">
+        <header class="fold__header">
+            <h1 class="fold__title">@CurrentPage.title</h1>
+        </header>
+    </div>
+</div>
+
+<section class="contact-page">
+    @Html.Action("Index", "ContactFormSurface")
+</section>
