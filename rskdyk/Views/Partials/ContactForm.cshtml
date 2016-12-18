@@ -3,5 +3,18 @@
 @using (Html.BeginUmbracoForm("HandleFormSubmit", "ContactFormSurface", new Object { }, new { @class = "" }))
 { 
 
+    @Html.LabelFor(x => x.Name, new { @class = "" })
+    @Html.TextBoxFor(x => x.Name, new { @class = "", placeholder = "Name" })
+    @Html.ValidationMessageFor(x => x.Name)
+    @Html.LabelFor(x => x.Subject, new { @class = "" })
+    @Html.TextBoxFor(x => x.Subject, new { @class = "", placeholder = "Subject" })
+    @Html.ValidationMessageFor(x => x.Subject)
+    @Html.LabelFor(x => x.Email, new { @class = "" })
+    @Html.TextBoxFor(x => x.Email, new { @class = "", placeholder = "Email" })
+    @Html.ValidationMessageFor(x => x.Email)
+    @Html.LabelFor(x => x.Messsage, new { @class = "" })
+    @Html.TextAreaFor(x => x.Messsage, new { @class = "", placeholder = "Message" })
+    @Html.ValidationMessageFor(x => x.Messsage)
+    <input type="submit" value="Send" class="btn btn-default" />
 
 }
