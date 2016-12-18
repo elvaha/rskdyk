@@ -116,7 +116,11 @@ form input[type="submit"] {
         background-color: #161517
     }
     .navigation__logo {
-        line-height: 32px;
+        vertical-align: middle;
+        cursor: pointer
+    }
+    .navigation__logo img {
+        max-width: 32px;
         vertical-align: middle
     }
     .navigation__menu-btn {
@@ -182,7 +186,11 @@ form input[type="submit"] {
         padding: 10px
     }
     .navigation__logo {
-        line-height: 32px;
+        vertical-align: middle;
+        cursor: pointer
+    }
+    .navigation__logo img {
+        max-width: 32px;
         vertical-align: middle
     }
     .navigation__menu-btn {
@@ -618,6 +626,7 @@ form input[type="submit"] {
 }
 
 .testimonial__content {
+    padding-bottom: 20px;
     line-height: 140%;
     text-align: center
 }
@@ -632,7 +641,6 @@ form input[type="submit"] {
         padding: 50px 20px
     }
     .testimonial__content {
-        padding-bottom: 20px;
         font-size: 1.25rem
     }
     .testimonial__name {
@@ -1650,12 +1658,13 @@ form input[type="submit"] {
 }
 
 #logout-btn {
-    padding: 0;
+    padding: 0
 }
 
 #logout-btn input {
     padding: 0;
     font-size: 1rem;
     background-color: transparent;
-	cursor: pointer;
+    cursor: pointer;
+    margin: 0 auto
 }

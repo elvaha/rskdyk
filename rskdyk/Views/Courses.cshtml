@@ -27,6 +27,7 @@
                 <header class="preview__header">
                     <h1 class="preview__title">@course.title</h1>
                 </header>
+				<p class="preview__date">@course.startingDate.ToString("dd/mm/yyyy")</p>
                 <p class="preview__description">@course.preview</p>
                 <a class="preview__link" href="@course.Url">Read more</a>
             </article>
