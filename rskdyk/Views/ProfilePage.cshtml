@@ -9,7 +9,13 @@
     
 }
 
-@user.Name
-@user.Email
+<div class="fold">
+    <div class="fold__content">
+        <header class="fold__header">
+            <h1 class="fold__title">@CurrentPage.title</h1>
+            <p class="fold__subtitle">@CurrentPage.description</p>
+        </header>
+    </div>
+</div>
 
 @Html.Partial("ImageUpload")

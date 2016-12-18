@@ -4,15 +4,19 @@
 	Layout = "Master.cshtml";
 }
 
+<div class="fold">
+    <div class="fold__content">
+        <header class="fold__header">
+            <h1 class="fold__title">@Umbraco.Field("title")</h1>
+            <p class="fold__subtitle">@Umbraco.Field("subtitle")</p>
+        </header>
+    </div>
+</div>
+<section class="information">
+    <p class="information__author">@Umbraco.Field("author")</p>
+    <p class="information__date">@CurrentPage.CreateDate.ToString("yyyy/mm/dd")</p>
+    <div class="information__content">@Umbraco.Field("content")</div>
+</section>
 
 
-@Umbraco.Field("title")
-@Umbraco.Field("author")
-@{
-    if (CurrentPage.HasValue("image"))
-    {
-        var dynamicMediaItem = Umbraco.Media(CurrentPage.image);
-        <img src="@dynamicMediaItem.umbracoFile" alt="@dynamicMediaItem.Name"/>
-    }
-}
-@Umbraco.Field("body")
+

@@ -1,13 +1,19 @@
+p,
 .story__social p,
 .membership__information,
 .site-footer__navigation,
-.preview__description {
+.preview__description,
+form input[type="text"],
+form input[type="password"],
+.information__content,
+.courses__information {
     font-family: 'Lato';
     font-weight: 300
 }
 
 .navigation__submenu-item--font,
-.preview__subtitle {
+.preview__subtitle,
+form p {
     font-family: 'Lato';
     font-weight: 300;
     text-transform: uppercase
@@ -25,6 +31,7 @@
 .membership-cta__link,
 .membership__payment,
 .preview__link,
+form input[type="submit"],
 .navigation__logo--font,
 .navigation__menu-item--font,
 .fold__title,
@@ -34,7 +41,10 @@
 .membership__title,
 .membership__price,
 .preview__title,
-.preview__author {
+.preview__author,
+form label,
+.information__author,
+.information__date {
     font-family: 'Lato';
     font-weight: 900;
     text-transform: uppercase
@@ -79,29 +89,11 @@ ul {
 
 .membership-cta__link,
 .membership__payment,
-.preview__link {
+.preview__link,
+form input[type="submit"] {
     padding: 20px 40px;
     color: #fff;
     background-color: #e04c5a
-}
-
-.the-end {
-    border-top: 1px solid #8c8b8b;
-    text-align: center
-}
-
-.the-end:after {
-    content: '§';
-    display: inline-block;
-    position: relative;
-    top: -14px;
-    padding: 0 10px;
-    background: #f0f0f0;
-    color: #8c8b8b;
-    font-size: 18px;
-    -webkit-transform: rotate(60deg);
-    -moz-transform: rotate(60deg);
-    transform: rotate(60deg)
 }
 
 .navigation--transparent-bg {
@@ -228,16 +220,22 @@ ul {
     }
 }
 
+p,
 .story__social p,
 .membership__information,
 .site-footer__navigation,
-.preview__description {
+.preview__description,
+form input[type="text"],
+form input[type="password"],
+.information__content,
+.courses__information {
     font-family: 'Lato';
     font-weight: 300
 }
 
 .navigation__submenu-item--font,
-.preview__subtitle {
+.preview__subtitle,
+form p {
     font-family: 'Lato';
     font-weight: 300;
     text-transform: uppercase
@@ -255,6 +253,7 @@ ul {
 .membership-cta__link,
 .membership__payment,
 .preview__link,
+form input[type="submit"],
 .navigation__logo--font,
 .navigation__menu-item--font,
 .fold__title,
@@ -264,7 +263,10 @@ ul {
 .membership__title,
 .membership__price,
 .preview__title,
-.preview__author {
+.preview__author,
+form label,
+.information__author,
+.information__date {
     font-family: 'Lato';
     font-weight: 900;
     text-transform: uppercase
@@ -309,29 +311,11 @@ ul {
 
 .membership-cta__link,
 .membership__payment,
-.preview__link {
+.preview__link,
+form input[type="submit"] {
     padding: 20px 40px;
     color: #fff;
     background-color: #e04c5a
-}
-
-.the-end {
-    border-top: 1px solid #8c8b8b;
-    text-align: center
-}
-
-.the-end:after {
-    content: '§';
-    display: inline-block;
-    position: relative;
-    top: -14px;
-    padding: 0 10px;
-    background: #f0f0f0;
-    color: #8c8b8b;
-    font-size: 18px;
-    -webkit-transform: rotate(60deg);
-    -moz-transform: rotate(60deg);
-    transform: rotate(60deg)
 }
 
 .fold {
@@ -410,16 +394,22 @@ ul {
     }
 }
 
+p,
 .story__social p,
 .membership__information,
 .site-footer__navigation,
-.preview__description {
+.preview__description,
+form input[type="text"],
+form input[type="password"],
+.information__content,
+.courses__information {
     font-family: 'Lato';
     font-weight: 300
 }
 
 .navigation__submenu-item--font,
-.preview__subtitle {
+.preview__subtitle,
+form p {
     font-family: 'Lato';
     font-weight: 300;
     text-transform: uppercase
@@ -437,6 +427,7 @@ ul {
 .membership-cta__link,
 .membership__payment,
 .preview__link,
+form input[type="submit"],
 .navigation__logo--font,
 .navigation__menu-item--font,
 .fold__title,
@@ -446,7 +437,10 @@ ul {
 .membership__title,
 .membership__price,
 .preview__title,
-.preview__author {
+.preview__author,
+form label,
+.information__author,
+.information__date {
     font-family: 'Lato';
     font-weight: 900;
     text-transform: uppercase
@@ -491,29 +485,11 @@ ul {
 
 .membership-cta__link,
 .membership__payment,
-.preview__link {
+.preview__link,
+form input[type="submit"] {
     padding: 20px 40px;
     color: #fff;
     background-color: #e04c5a
-}
-
-.the-end {
-    border-top: 1px solid #8c8b8b;
-    text-align: center
-}
-
-.the-end:after {
-    content: '§';
-    display: inline-block;
-    position: relative;
-    top: -14px;
-    padding: 0 10px;
-    background: #f0f0f0;
-    color: #8c8b8b;
-    font-size: 18px;
-    -webkit-transform: rotate(60deg);
-    -moz-transform: rotate(60deg);
-    transform: rotate(60deg)
 }
 
 .node {
@@ -647,7 +623,8 @@ ul {
 }
 
 .testimonial__name {
-    font-size: 1.15rem
+    font-size: 1.15rem;
+    text-align: center
 }
 
 @media screen and (min-width: 750px) {
@@ -719,16 +696,22 @@ ul {
     }
 }
 
+p,
 .story__social p,
 .membership__information,
 .site-footer__navigation,
-.preview__description {
+.preview__description,
+form input[type="text"],
+form input[type="password"],
+.information__content,
+.courses__information {
     font-family: 'Lato';
     font-weight: 300
 }
 
 .navigation__submenu-item--font,
-.preview__subtitle {
+.preview__subtitle,
+form p {
     font-family: 'Lato';
     font-weight: 300;
     text-transform: uppercase
@@ -746,6 +729,7 @@ ul {
 .membership-cta__link,
 .membership__payment,
 .preview__link,
+form input[type="submit"],
 .navigation__logo--font,
 .navigation__menu-item--font,
 .fold__title,
@@ -755,7 +739,10 @@ ul {
 .membership__title,
 .membership__price,
 .preview__title,
-.preview__author {
+.preview__author,
+form label,
+.information__author,
+.information__date {
     font-family: 'Lato';
     font-weight: 900;
     text-transform: uppercase
@@ -800,29 +787,11 @@ ul {
 
 .membership-cta__link,
 .membership__payment,
-.preview__link {
+.preview__link,
+form input[type="submit"] {
     padding: 20px 40px;
     color: #fff;
     background-color: #e04c5a
-}
-
-.the-end {
-    border-top: 1px solid #8c8b8b;
-    text-align: center
-}
-
-.the-end:after {
-    content: '§';
-    display: inline-block;
-    position: relative;
-    top: -14px;
-    padding: 0 10px;
-    background: #f0f0f0;
-    color: #8c8b8b;
-    font-size: 18px;
-    -webkit-transform: rotate(60deg);
-    -moz-transform: rotate(60deg);
-    transform: rotate(60deg)
 }
 
 .story {
@@ -908,16 +877,22 @@ ul {
     }
 }
 
+p,
 .story__social p,
 .membership__information,
 .site-footer__navigation,
-.preview__description {
+.preview__description,
+form input[type="text"],
+form input[type="password"],
+.information__content,
+.courses__information {
     font-family: 'Lato';
     font-weight: 300
 }
 
 .navigation__submenu-item--font,
-.preview__subtitle {
+.preview__subtitle,
+form p {
     font-family: 'Lato';
     font-weight: 300;
     text-transform: uppercase
@@ -935,6 +910,7 @@ ul {
 .membership-cta__link,
 .membership__payment,
 .preview__link,
+form input[type="submit"],
 .navigation__logo--font,
 .navigation__menu-item--font,
 .fold__title,
@@ -944,7 +920,10 @@ ul {
 .membership__title,
 .membership__price,
 .preview__title,
-.preview__author {
+.preview__author,
+form label,
+.information__author,
+.information__date {
     font-family: 'Lato';
     font-weight: 900;
     text-transform: uppercase
@@ -989,29 +968,11 @@ ul {
 
 .membership-cta__link,
 .membership__payment,
-.preview__link {
+.preview__link,
+form input[type="submit"] {
     padding: 20px 40px;
     color: #fff;
     background-color: #e04c5a
-}
-
-.the-end {
-    border-top: 1px solid #8c8b8b;
-    text-align: center
-}
-
-.the-end:after {
-    content: '§';
-    display: inline-block;
-    position: relative;
-    top: -14px;
-    padding: 0 10px;
-    background: #f0f0f0;
-    color: #8c8b8b;
-    font-size: 18px;
-    -webkit-transform: rotate(60deg);
-    -moz-transform: rotate(60deg);
-    transform: rotate(60deg)
 }
 
 .membership {
@@ -1076,16 +1037,22 @@ ul {
     }
 }
 
+p,
 .story__social p,
 .membership__information,
 .site-footer__navigation,
-.preview__description {
+.preview__description,
+form input[type="text"],
+form input[type="password"],
+.information__content,
+.courses__information {
     font-family: 'Lato';
     font-weight: 300
 }
 
 .navigation__submenu-item--font,
-.preview__subtitle {
+.preview__subtitle,
+form p {
     font-family: 'Lato';
     font-weight: 300;
     text-transform: uppercase
@@ -1103,6 +1070,7 @@ ul {
 .membership-cta__link,
 .membership__payment,
 .preview__link,
+form input[type="submit"],
 .navigation__logo--font,
 .navigation__menu-item--font,
 .fold__title,
@@ -1112,7 +1080,10 @@ ul {
 .membership__title,
 .membership__price,
 .preview__title,
-.preview__author {
+.preview__author,
+form label,
+.information__author,
+.information__date {
     font-family: 'Lato';
     font-weight: 900;
     text-transform: uppercase
@@ -1157,29 +1128,11 @@ ul {
 
 .membership-cta__link,
 .membership__payment,
-.preview__link {
+.preview__link,
+form input[type="submit"] {
     padding: 20px 40px;
     color: #fff;
     background-color: #e04c5a
-}
-
-.the-end {
-    border-top: 1px solid #8c8b8b;
-    text-align: center
-}
-
-.the-end:after {
-    content: '§';
-    display: inline-block;
-    position: relative;
-    top: -14px;
-    padding: 0 10px;
-    background: #f0f0f0;
-    color: #8c8b8b;
-    font-size: 18px;
-    -webkit-transform: rotate(60deg);
-    -moz-transform: rotate(60deg);
-    transform: rotate(60deg)
 }
 
 .site-footer {
@@ -1197,7 +1150,7 @@ ul {
 
 .site-footer__link,
 a {
-    color: #000
+    color: #333
 }
 
 .site-footer__link:visited,
@@ -1206,7 +1159,7 @@ a {
 a:visited,
 a:active,
 a:hover {
-    color: #000
+    color: #333
 }
 
 .site-footer__social {
@@ -1218,16 +1171,22 @@ a:hover {
     max-width: 88px
 }
 
+p,
 .story__social p,
 .membership__information,
 .site-footer__navigation,
-.preview__description {
+.preview__description,
+form input[type="text"],
+form input[type="password"],
+.information__content,
+.courses__information {
     font-family: 'Lato';
     font-weight: 300
 }
 
 .navigation__submenu-item--font,
-.preview__subtitle {
+.preview__subtitle,
+form p {
     font-family: 'Lato';
     font-weight: 300;
     text-transform: uppercase
@@ -1245,6 +1204,7 @@ a:hover {
 .membership-cta__link,
 .membership__payment,
 .preview__link,
+form input[type="submit"],
 .navigation__logo--font,
 .navigation__menu-item--font,
 .fold__title,
@@ -1254,7 +1214,10 @@ a:hover {
 .membership__title,
 .membership__price,
 .preview__title,
-.preview__author {
+.preview__author,
+form label,
+.information__author,
+.information__date {
     font-family: 'Lato';
     font-weight: 900;
     text-transform: uppercase
@@ -1299,29 +1262,11 @@ ul {
 
 .membership-cta__link,
 .membership__payment,
-.preview__link {
+.preview__link,
+form input[type="submit"] {
     padding: 20px 40px;
     color: #fff;
     background-color: #e04c5a
-}
-
-.the-end {
-    border-top: 1px solid #8c8b8b;
-    text-align: center
-}
-
-.the-end:after {
-    content: '§';
-    display: inline-block;
-    position: relative;
-    top: -14px;
-    padding: 0 10px;
-    background: #f0f0f0;
-    color: #8c8b8b;
-    font-size: 18px;
-    -webkit-transform: rotate(60deg);
-    -moz-transform: rotate(60deg);
-    transform: rotate(60deg)
 }
 
 .preview {
@@ -1352,7 +1297,8 @@ ul {
 }
 
 .preview__link {
-    display: inline-block
+    display: inline-block;
+    padding-bottom: 40px
 }
 
 @media screen and (min-width: 750px) {
@@ -1389,4 +1335,327 @@ ul {
     .preview__description {
         font-size: 1.5rem
     }
+}
+
+p,
+.story__social p,
+.membership__information,
+.site-footer__navigation,
+.preview__description,
+form input[type="text"],
+form input[type="password"],
+.information__content,
+.courses__information {
+    font-family: 'Lato';
+    font-weight: 300
+}
+
+.navigation__submenu-item--font,
+.preview__subtitle,
+form p {
+    font-family: 'Lato';
+    font-weight: 300;
+    text-transform: uppercase
+}
+
+.fold__message,
+.testimonial__name,
+.story__date,
+.preview__date {
+    font-family: 'Lato';
+    font-weight: 700;
+    text-transform: uppercase
+}
+
+.membership-cta__link,
+.membership__payment,
+.preview__link,
+form input[type="submit"],
+.navigation__logo--font,
+.navigation__menu-item--font,
+.fold__title,
+.node__title,
+.media__message,
+.story__title,
+.membership__title,
+.membership__price,
+.preview__title,
+.preview__author,
+form label,
+.information__author,
+.information__date {
+    font-family: 'Lato';
+    font-weight: 900;
+    text-transform: uppercase
+}
+
+.fold__subtitle,
+.introduction__primary,
+.introduction__secondary,
+.testimonial__content,
+.story__description,
+.membership__description {
+    font-family: 'Lato';
+    font-weight: 300;
+    font-style: italic
+}
+
+.clearfix:before {
+    content: '';
+    display: table;
+    clear: both
+}
+
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both
+}
+
+a,
+a:visited,
+a:active,
+a:hover {
+    color: #fff;
+    text-decoration: none
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+.membership-cta__link,
+.membership__payment,
+.preview__link,
+form input[type="submit"] {
+    padding: 20px 40px;
+    color: #fff;
+    background-color: #e04c5a
+}
+
+form {
+    max-width: 500px;
+    padding: 20px
+}
+
+form label {
+    display: block;
+    padding-bottom: 10px;
+    font-size: 1.25rem
+}
+
+form input[type="text"],
+form input[type="password"] {
+    display: block;
+    width: 100%;
+    padding: 7.5px;
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+    border: 1px solid #333
+}
+
+form input[type="submit"] {
+    display: block;
+    margin: 10px 0;
+    outline: none;
+    border: none;
+    font-size: 1.5rem
+}
+
+form textarea {
+    width: 100%;
+    min-height: 200px;
+    border: 1px solid #333
+}
+
+form p {
+    padding: 10px 0;
+    color: red;
+    font-size: .9rem
+}
+
+p,
+.story__social p,
+.membership__information,
+.site-footer__navigation,
+.preview__description,
+form input[type="text"],
+form input[type="password"],
+.information__content,
+.courses__information {
+    font-family: 'Lato';
+    font-weight: 300
+}
+
+.navigation__submenu-item--font,
+.preview__subtitle,
+form p {
+    font-family: 'Lato';
+    font-weight: 300;
+    text-transform: uppercase
+}
+
+.fold__message,
+.testimonial__name,
+.story__date,
+.preview__date {
+    font-family: 'Lato';
+    font-weight: 700;
+    text-transform: uppercase
+}
+
+.membership-cta__link,
+.membership__payment,
+.preview__link,
+form input[type="submit"],
+.navigation__logo--font,
+.navigation__menu-item--font,
+.fold__title,
+.node__title,
+.media__message,
+.story__title,
+.membership__title,
+.membership__price,
+.preview__title,
+.preview__author,
+form label,
+.information__author,
+.information__date {
+    font-family: 'Lato';
+    font-weight: 900;
+    text-transform: uppercase
+}
+
+.fold__subtitle,
+.introduction__primary,
+.introduction__secondary,
+.testimonial__content,
+.story__description,
+.membership__description {
+    font-family: 'Lato';
+    font-weight: 300;
+    font-style: italic
+}
+
+.clearfix:before {
+    content: '';
+    display: table;
+    clear: both
+}
+
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both
+}
+
+a,
+a:visited,
+a:active,
+a:hover {
+    color: #fff;
+    text-decoration: none
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+.membership-cta__link,
+.membership__payment,
+.preview__link,
+form input[type="submit"] {
+    padding: 20px 40px;
+    color: #fff;
+    background-color: #e04c5a
+}
+
+.information {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 150px 20px
+}
+
+.information__author {
+    padding-bottom: 10px;
+    font-size: 1.25rem;
+    text-align: center
+}
+
+.information__date {
+    text-align: center
+}
+
+.information__content {
+    padding: 50px 0;
+    line-height: 120%
+}
+
+@media screen and (min-width: 970px) {
+    .information__author {
+        font-size: 1.5rem
+    }
+    .information__date {
+        font-size: 1.25rem
+    }
+    .information__content {
+        font-size: 1.25rem
+    }
+}
+
+@media screen and (min-width: 1170px) {
+    .information__author {
+        font-size: 1.75rem
+    }
+    .information__date {
+        font-size: 1.5rem
+    }
+    .information__content {
+        font-size: 1.35rem
+    }
+}
+
+.courses__information {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 100px 20px 0;
+    text-align: center;
+    line-height: 120%
+}
+
+@media screen and (min-width: 970px) {
+    .courses__information {
+        font-size: 1.25rem
+    }
+}
+
+@media screen and (min-width: 1170px) {
+    .courses__information {
+        font-size: 1.5rem
+    }
+}
+
+.contact-page {
+    max-width: 500px;
+    margin: 100px auto
+}
+
+.login-page {
+    max-width: 500px;
+    margin: 100px auto
+}
+
+#logout-btn {
+    padding: 0;
+}
+
+#logout-btn input {
+    padding: 0;
+    font-size: 1rem;
+    background-color: transparent;
+	cursor: pointer;
 }

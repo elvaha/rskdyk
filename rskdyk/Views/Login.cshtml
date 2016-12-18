@@ -2,8 +2,14 @@
 @{
 	Layout = "Master.cshtml";
 }
-
-@Umbraco.Field("title")
-@Umbraco.Field("description")
-
-@Html.Partial("Login")
+<div class="fold">
+    <div class="fold__content">
+        <header class="fold__header">
+            <h1 class="fold__title">@CurrentPage.title</h1>
+            <p class="fold__subtitle">@CurrentPage.description</p>
+        </header>
+    </div>
+</div>
+<section class="login-page">
+	@Html.Partial("Login")
+</section>
