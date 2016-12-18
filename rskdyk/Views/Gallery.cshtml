@@ -1,60 +1,61 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
 @using ContentModels = Umbraco.Web.PublishedContentModels;
 @{
-	Layout = "Master.cshtml";
+    Layout = "Master.cshtml";
 }
 @section gallery {
 
-    @*
-        <link rel='stylesheet' href='~/css/photoswipe.css' />
-        <link rel='stylesheet' href='~/css/default-skin/default-skin.css' />
-        <script type="text/javascript" src="~/scripts/photoswipe.min.js"></script>
-        <script type="text/javascript" src="~/scripts/photoswipe-ui-default.min.js"></script>
 
-        <style>
-            .pswp {
-                z-index: 0;
-            }
-        </style>
+    <link rel='stylesheet' href='~/css/photoswipe.css' />
+    <link rel='stylesheet' href='~/css/default-skin/default-skin.css' />
+    <script type="text/javascript" src="~/scripts/photoswipe.min.js"></script>
+    <script type="text/javascript" src="~/scripts/photoswipe-ui-default.min.js"></script>
+    <script type="text/javascript" src="~/scripts/pswScript.js"></script>
 
-        <script>
-        </script>
+    <style>
+        .pswp {
+            z-index: 0;
+        }
+    </style>
 
-        <div class="pswp " tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="pswp__bg"></div>
-            <div class="pswp__scroll-wrap">
-                <div class="pswp__container">
-                    <div class="pswp__item"></div>
-                    <div class="pswp__item"></div>
-                    <div class="pswp__item"></div>
-                </div>
-                <div class="pswp__ui pswp__ui--hidden">
-                    <div class="pswp__top-bar">
-                        <div class="pswp__counter"></div>
-                        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-                        <button class="pswp__button pswp__button--share" title="Share"></button>
-                        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-                        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-                        <div class="pswp__preloader">
-                            <div class="pswp__preloader__icn">
-                                <div class="pswp__preloader__cut">
-                                    <div class="pswp__preloader__donut"></div>
-                                </div>
+    <script>
+    </script>
+
+    <div class="pswp " tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div>
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
                             </div>
                         </div>
                     </div>
-                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                        <div class="pswp__share-tooltip"></div>
-                    </div>
-                    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
-                    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
-                    <div class="pswp__caption">
-                        <div class="pswp__caption__center"></div>
-                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
                 </div>
             </div>
         </div>
-    *@
+    </div>
+
 
 
 
@@ -80,11 +81,35 @@
             </header>
             <p class="story__description">@story.storyDescription</p>
 
-            @if (story.storyPicture != null)
+            @{
+                if (story.Content.hasValue("galleryPicker"))
+                {
+                    var imagesList = story.galleryPicker.Split(new string[] { "," }, StringSplitOptions.RemoveEmptyEntries);
+                    var imagesCollection = Umbraco.TypedMedia(imagesList);
+
+
+                    <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+
+                        @foreach (var imageItem in imagesCollection)
                     {
-                        var imagePath = Umbraco.Media(story.storyPicture);
-                        <img class="story__media" src="@imagePath.Url"/>
-                    }
+
+                            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="large-image.jpg" itemprop="contentUrl" data-size="600x400">
+                                    <img src="@imageItem.Url" itemprop="thumbnail" alt="Image description" />
+                                </a>
+                                <figcaption itemprop="caption description">Image caption</figcaption>
+                            </figure>
+                        }
+
+                    </div>
+                }
+            }
+
+            @if (story.storyPicture != null)
+                {
+                    var imagePath = Umbraco.Media(story.storyPicture);
+                    <img class="story__media" src="@imagePath.Url"/>
+                }
 
             <footer class="story__footer">
                 <ul>
@@ -99,6 +124,6 @@
                 </ul>
             </footer>
         </article>
-    }
+                }
 
 }

@@ -595,6 +595,7 @@
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />
     <Content Include="scripts\photoswipe-ui-default.min.js" />
     <Content Include="scripts\photoswipe.min.js" />
+    <Content Include="scripts\pswScript.js" />
     <Content Include="scripts\script.js" />
     <Content Include="Umbraco\Actions\delete.aspx" />
     <Content Include="Umbraco\Actions\editContent.aspx" />
