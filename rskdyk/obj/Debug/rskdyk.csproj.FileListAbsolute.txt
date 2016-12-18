@@ -234,7 +234,6 @@ D:\Projects\rskdyk\rskdyk\bin\rskdyk.dll
 D:\Projects\rskdyk\rskdyk\bin\rskdyk.pdb
 D:\Projects\rskdyk\rskdyk\bin\System.Collections.Immutable.dll
 D:\Projects\rskdyk\rskdyk\bin\System.Reflection.Metadata.dll
-D:\Projects\rskdyk\rskdyk\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 D:\Projects\rskdyk\rskdyk\obj\Debug\rskdyk.csprojResolveAssemblyReference.cache
 D:\Projects\rskdyk\rskdyk\obj\Debug\rskdyk.dll
 D:\Projects\rskdyk\rskdyk\obj\Debug\rskdyk.pdb
